@@ -1,0 +1,19 @@
+#include <iostream>
+#include "stdlib.h"
+#include "math.h"
+using namespace std;
+void main(){
+	int n,cuadrado;
+	int i=1;
+	int sum=0;
+		cin>>n;
+		while(i<=n){
+			cuadrado=i*i;
+			sum=sum+cuadrado;
+			cout<<"la serie es: "<<sum<<endl;
+			i=i++;}
+			getch();
+			system("cls");
+		
+		getch();
+}
