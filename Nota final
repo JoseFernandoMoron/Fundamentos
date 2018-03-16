@@ -1,0 +1,22 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#include "stdlib.h"
+using namespace std;
+void main(){
+	int p1,p2,p,nf,i,f;
+	int n=100;
+	for(int i=0;i<=n;i++){
+		cout<<"ingrese la nota de los parciales"<<endl;
+		cin>>p1>>p2;
+		cout<<"ingrese la nota practica"<<endl;
+		cin>>p;
+		cout<<"ingrese nota del final"<<endl;
+		cin>>f;
+		nf=(((p1+p2)/2)*0.4)+(p*0.2)+(f*0.4);
+		cout<<"la nota final es: "<<nf<<endl;
+		getch();
+		system("cls");
+	}
+	getch();
+}
