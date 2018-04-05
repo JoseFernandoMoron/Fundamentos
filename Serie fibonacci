@@ -1,0 +1,16 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std;
+void main(){
+	int n,a=0,x=1,y=1;
+	 cout<<"digite el numero de elementos: "<<endl;
+	 cin>>n;
+	   for(int i=1;i<=n;i++){
+		  x=a+y;
+		   cout<<x<<" "<<endl;
+		   a=y;
+		   y=x;
+	}
+getch();
+}
