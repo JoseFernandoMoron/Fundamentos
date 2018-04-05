@@ -1,0 +1,27 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main()
+{
+ int n,i, signo,p;
+ float c,s;
+ cin>>n; cin>>c;
+ s=0; signo=-1;
+ for(i=1;i<=n;i++)
+ {
+	if(i%2==0)
+	{s=s-pow(c,i);
+	 p=pow(c,i);
+	 cout<<p; }
+	else
+	{ s=s+pow(c,i);
+	  p=pow(c,i);
+	  cout<<p; }
+ }cout<<endl;
+ cout<<s;
+ getch();
+}
