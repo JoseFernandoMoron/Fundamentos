@@ -1,0 +1,27 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#define MAX 100
+
+using namespace std;
+
+int main(){
+	int MATRIZ[MAX][MAX], columnas, filas;
+	cout<<"ingrese el numero de filas"<<endl;
+	cin>>filas;
+	cout<<"ingrese el numero de columnas"<<endl;
+	cin>>columnas;
+	for(int i=0;i<filas;i++){
+		for(int j=0;j<columnas;j++){
+			cout<<"digite un numero ["<<i<<"]["<<j<<"]";
+			cin>>MATRIZ[i][j];}}
+	for(int i=0;i<filas;i++){
+		for(int j=0;j<columnas;j++){
+			cout<<MATRIZ[i][j];
+		}
+		cout<<"\n";
+
+	}	
+	getch();
+	return 0;
+}
