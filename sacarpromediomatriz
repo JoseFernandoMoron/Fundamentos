@@ -1,0 +1,26 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#define MAX 100
+
+using namespace std;
+
+int main(){
+	int MAC[MAX][MAX],f,c, suma=0;
+	float promedio;
+	cout<<"ingrese el numero de filas"<<endl;
+	cin>>f;
+	cout<<"ingrese el numero de columnas"<<endl;
+	cin>>c;
+	for(int i=0;i<f;i++){
+		for(int j=0;j<c;j++){
+			cout<<"ingrese el digito: ["<<i<<"]["<<j<<"]";
+			cin>>MAC[i][j];}}
+
+	cout<<"Ahora una funcion que me saque el promedio"<<endl;
+	for(int i=0;i<f;i++){
+		for(int j=0;j<c;j++){
+			suma=suma+MAC[i][j];}}
+	promedio=suma/f*c;
+	cout<<"el promedio es: "<<promedio;
+	getch();}
