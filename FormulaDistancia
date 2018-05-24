@@ -1,0 +1,32 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+float formula(float x1,float x2, float y1, float y2);
+
+using namespace std;
+int main(){
+float distancia,a,b,c,d;
+cout<<"ingrese x1 y x2"<<endl;
+cin>>a>>b;
+cout<<"ingrese y1,y2"<<endl;
+cin>>c>>d;
+distancia=formula(a,b,c,d);
+
+cout<<"la distancia es: "<<distancia<<endl;
+getch();}
+
+
+
+
+
+float formula(float x1, float x2, float y1, float y2){
+
+	float d,x;
+	x=((pow(x1,2)-2*(x1*x2))+(pow(y1,2)-2*(y1*y2)+pow(y2,2)));
+	if(x<0){
+		x=x*(-1);}
+	d=sqrt(x);
+	
+	return d;}
