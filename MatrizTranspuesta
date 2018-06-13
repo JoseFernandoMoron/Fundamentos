@@ -1,0 +1,26 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#define MAX 100
+using namespace std;
+void main(){
+int MAD[MAX][MAX],f,c,i=0,j=0;
+cout<<"ingrese primero el numero de filas y luego el de columnas: ";
+cin>>f>>c;
+for(i=0;i<f;i++){
+	for(j=0;j<c;j++){
+		cout<<"digite el numero ["<<i<<"]["<<j<<"]";
+		cin>>MAD[i][j];}}
+cout<<"esta es la matriz original"<<endl;
+for(i=0;i<f;i++){
+	for(j=0;j<c;j++){
+		cout<<MAD[i][j];}
+	cout<<"\n";
+	}
+cout<<"y esta es la transpuesta"<<endl;
+for(i=0;i<f;i++){
+	for(j=0;j<c;j++){
+		cout<<MAD[j][i];}
+	cout<<"\n";
+	}
+	getch();}
