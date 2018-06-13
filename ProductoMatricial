@@ -1,0 +1,41 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#define MAX 100
+using namespace std;
+void main(){
+int MAD[MAX][MAX],MAD1[MAX][MAX],C[MAX][MAX],f,c,f1,c2,i=0,j=0;
+cout<<"ingrese primero el numero de filas y luego el de columnas: "<<endl;
+cin>>f>>c;
+cout<<"primera matriz"<<endl;
+for(i=0;i<f;i++){
+	for(j=0;j<c;j++){
+		cout<<"digite el numero ["<<i<<"]["<<j<<"]";
+		cin>>MAD[i][j];}}
+cout<<" ingrese los elementos para la segunda matriz"<<endl;
+cin>>f1>>c2;
+for(i=0;i<f1;i++){
+	for(j=0;j<c2;j++){
+		cout<<"digite el numero ["<<i<<"]["<<j<<"]";
+		cin>>MAD1[i][j];}}
+
+cout<<"la inicializamos"<<endl;
+for(int i=0; i<f; ++i){
+        for(int j=0; j<c2; ++j){
+			C[i][j] = 0;}}
+cout<<"generamos la matriz c"<<endl;
+for(int i=0; i<f; ++i){
+        for(int j=0; j<c2; ++j){
+            for(int z=0; z<f1; ++z){
+					C[i][j]=C[i][j]+ MAD[i][z] * MAD1[z][j];}}}
+cout<<"Matriz C: "<<endl;
+    for(int i=0; i<f; ++i)
+    {
+        for(int j=0; j<c2; ++j)
+        {
+            cout<<C[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+
+	getch();}
