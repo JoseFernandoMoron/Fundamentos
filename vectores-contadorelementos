@@ -1,0 +1,29 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#define MAX 100
+
+using namespace std;
+void main(){
+	int V[MAX];
+	int n,x;
+	int cnt=0;
+	int cnt2=0;
+	int cnt3=0;
+	cout<<"ingrese n"<<endl;
+	cin>>n;
+	int i=0;
+	for(i=0;i<n;i++){
+		cin>>V[i];}
+	for(i=0;i<n;i++){
+		if(V[i]<0){
+			cnt++;}
+		else{
+			if(V[i]==0){
+				cnt3++;}
+			else{
+				cnt2++;}}}
+cout<<"Cantidad de negativos: "<<cnt<<endl;
+cout<<"Cantidad de positivos: "<<cnt2<<endl;
+cout<<"Cantidad de ceros: "<<cnt3<<endl;
+getch();}
